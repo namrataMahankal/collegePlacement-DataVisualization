@@ -1,0 +1,36 @@
+<html>
+<body>
+<h1> New Student </h1>
+
+<form action="{{url_for('newStudent')}}" method = 'POST'>
+
+<p>Name:</p>
+
+<input type='text' size='80' name='name'>
+
+<p>Id:</p>
+
+<input type='number' name='id'>
+
+<p>Year:</p>
+
+<input type='number' name='year'>
+
+<p>Company:</p>
+
+<input type='text' size='50' name='company'>
+
+<p>Salary:</p>
+
+<input type='number' name='salary'>
+
+<p>Department:</p>
+
+<input type='text' size='80' name='dept'>
+
+<input type='submit' value='Create'>
+
+</form>
+
+</body>
+</html>

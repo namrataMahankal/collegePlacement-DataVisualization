@@ -1,0 +1,42 @@
+<html>
+<body>
+
+<h1 style="color:red"><center>{{"College Placements"}}</center></h1><br><br><br>
+<center>
+<table border='1'>
+<tr>
+<th>Name</th>
+<th>Id</th>
+<th>Year</th>
+<th>Salary</th>
+<th>Company</th>
+<th>Department</th>
+</tr>
+
+{% for i in a %}
+
+<div>
+
+<tr>
+<td>{{i.name}}</td>
+<td>{{i.id}}</td>
+<td>{{i.year}}</td>
+<td>{{i.salary}}</td>
+<td>{{i.company}}</td>
+<td>{{i.dept}}</td>
+</tr>
+</div>
+
+{% endfor %}
+</table>
+<br><br>
+
+<a href = '{{url_for('newStudent') }}'>
+Add new Student</a>
+&nbsp
+<a href = '{{url_for('graphView') }}'>
+Graph View - Year Wise</a>
+
+</form>
+</body>
+</html>
